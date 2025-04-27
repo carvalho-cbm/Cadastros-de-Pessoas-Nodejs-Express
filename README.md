@@ -9,8 +9,8 @@ Esse é um projeto simples de cadastro de pessoas usando Node.js, Express e SQLi
 
 ## Instalação
 
-cd Cadastros-de-Pessoas-Nodejs-Express
-npm install
+- cd Cadastros-de-Pessoas-Nodejs-Express
+- npm install ou node app.js no terminal
 
 ## Acesso/Link
 
