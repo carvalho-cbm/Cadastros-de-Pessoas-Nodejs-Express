@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1d;
+    padding: min(50px, 7%);
+}
+
+h1 {
+    color: white;
+    margin: 30px 0;
+}
+
+#aviso{
+    color: red;
+}
+
+/* pagina1 */
+
+#tela_registro {
+    background-color: #3b5998;
+    padding: 2em;
+    border-radius: 5px;
+    border: 1px solid rgb(65, 87, 102);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    margin: 5% auto;
+    height: 540px;
+}
+
+input {
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+    font-size: large;
+    color: rgb(68, 68, 68);
+}
+
+#birthdate {
+    width: 100%;
+}
+
+#btnsend {
+    width: 100%;
+    justify-content: center;
+    background-color: #0866ff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+#btnsend:hover {
+    background-color: rgb(127, 214, 218);
+    cursor: pointer;
+}
+
+.nav-link {
+    border-radius: 0 !important;
+}
+
+.nav a:hover {
+    color: white;
+    background-color: rgb(1, 103, 161);
+}
+
+/* pagina2 */
+
+#tabel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+}
+
+#tabel td {
+    padding: 1em;
+    text-align: left;
+    min-width: 350px;
+}
+
+#tabel-title {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    border: 2px;
+}
+
+#tabel-title td {
+    padding: 1em;
+    text-align: left;
+    min-width: 350px;
+    border: 2px;
+}
+
+.cartao {
+    background-color: #3b5998;
+    border: 1px solid rgb(65, 87, 102);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    border-radius: 0;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    thead {
+        display: none;
+    }
+    tbody,
+    tr {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+    td {
+        display: block;
+        width: 100%;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
